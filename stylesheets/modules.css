@@ -1,4 +1,5 @@
-.m-container { }
+.m-container {
+}
 
 .m-wrapper {
   outline: 1px solid red;
@@ -8,11 +9,26 @@
   background: #e6e6e6;
   outline: 1px solid blue;
   width: 100%;
-  margin-left: 20%;
-  padding: 1em;
+  margin-left: 5%;
+}
+
+.new-button {
+  float: left;
+  font-size: 3em;
+  color: #0080ff;
 }
 
 .new-activity {
+  display: none;
   float: left;
   width: 20%;
+}
+
+.m-gutter {
+  background: #ffffff;
+  width: 99%;
+  height: 1em;
+  font-size: 0.7em;
+  padding: 0.5em;
+  color: #999999;
 }

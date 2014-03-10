@@ -1,0 +1,17 @@
+.new-activity {
+  position: relative;
+  z-index: 10;
+}
+input {
+  border: none;
+  padding: 0.5em;
+}
+
+input[type='text']:focus{
+  background: #cccccc;
+  color: #0080ff;
+  outline: none;
+  border: 1px solid white;
+  padding: 1em;
+  width: 300px;
+}
