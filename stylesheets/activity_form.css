@@ -1,7 +1,17 @@
+.new-button {
+  float: left;
+  font-size: 3em;
+  color: #0080ff;
+}
+
 .new-activity {
+  /* display: none;*/
+  float: left;
+  width: 20%;
   position: relative;
   z-index: 10;
 }
+
 input {
   border: none;
   padding: 0.5em;

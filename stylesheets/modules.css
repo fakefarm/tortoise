@@ -9,19 +9,8 @@
   background: #e6e6e6;
   outline: 1px solid blue;
   width: 100%;
-  margin-left: 5%;
-}
-
-.new-button {
-  float: left;
-  font-size: 3em;
-  color: #0080ff;
-}
-
-.new-activity {
-  display: none;
-  float: left;
-  width: 20%;
+  /*margin-left: 5%;*/
+  margin-left: 20%;
 }
 
 .m-gutter {
