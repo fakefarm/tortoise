@@ -1,13 +1,23 @@
+.week {
+  overflow: auto;
+  padding: 1em 0;
+}
 .day {
-  width: 14.2857142857%;
+  width: 12.%;
   padding: 0.5em 1em;
   border-right: 1px dashed #b3b3b3;
+  float: left;
+  min-height: 400px;
+}
+
+.day:last-child {
+  border-right: none;
 }
 
 .event-box {
-    margin: 0.5em 0;
-    padding: 0.5em 0;
-    background: rgba(82,185,255,0.5);
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  background: rgba(82,185,255,0.5);
 }
 .event-box .title,
 .event-box .hours,
@@ -15,7 +25,6 @@
   color: #666666;
   margin: 0;
   padding: 0;
-  text-align: left;
 }
 
 .event-box .title {
@@ -29,4 +38,12 @@
   text-align: right;
   padding-right: 0.5em;
   cursor: crosshair;
+}
+
+.controls {
+  display: none;
+}
+
+.event-box:hover .controls {
+  display: block;
 }

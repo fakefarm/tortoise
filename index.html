@@ -14,22 +14,21 @@
     <div class="m-wrapper l-wrapper">
       <header>
         <nav>
-          <a href="">New Activity</a>
           <a href="">Stats</a>
           <a href="">About</a>
           <a href="">Print</a>
           <a href="">by Dave</a>
         </nav>
       </header>
-      <div class='new-button'>+</div>
+      <div id="new-button" class='new-button'>+</div>
       <section class="new-activity">
-        <form name="activity" action="">
-        <input type="text" placeholder="Read poetry"><br>
+        <form id="form" name="activity-form" action="">
+        <input id="activity-text" type="text" placeholder="Read poetry"><br>
         <input type="radio" name="category" value="personal">Personal<br>
         <input type="radio" name="category" value="relational">Relational<br>
         <input type="radio" name="category" value="responsibility">Responsibility<br>
         <div>How long?</div>
-        <select name="act-len">
+        <select id="duration">
           <option value="25">15 min</option>
           <option value="50">30 min</option>
           <option value="75">45 min</option>
@@ -44,7 +43,7 @@
         </select>
 
         <div>How many times?</div>
-        <select name="act-len">
+        <select id="frequency" name="act-len">
           <option value="1">Once a week.</option>
           <option value="2">Twice a week.</option>
           <option value="3">Three times.</option>
@@ -54,12 +53,12 @@
           <option value="7">Seven times.</option>
         </select><br>
 
-        <input type="Submit" value="Add to queue.">
+        <input type="Submit" value="Add to queue." id="submit-button">
         </form>
 
       </section>
       <div class="m-content">
-        <section class="m-gutter">
+        <section class="m-gutter" id="gutter">
           Gutter.
         </section>
         <section class="week">
@@ -70,8 +69,42 @@
                 <div class="handle">+</div>
                 <h3 class="title">Title</h3>
                 <h4 class="hours">3 hours</h4>
-                <h5 class="category">(Personal)</h5>
+                <div class="controls">
+                  <span>Edit</span>
+                  <span>|</span>
+                  <span>Delete</span>
+                </div>
               </div>
+            </div>
+          </div>
+          <div class="day">
+            <h2>Tuesday</h2>
+            <div class="events">
+            </div>
+          </div>
+          <div class="day">
+            <h2>Wednesday</h2>
+            <div class="events">
+            </div>
+          </div>
+          <div class="day">
+            <h2>Thursday</h2>
+            <div class="events">
+            </div>
+          </div>
+          <div class="day">
+            <h2>Friday</h2>
+            <div class="events">
+            </div>
+          </div>
+          <div class="day">
+            <h2>Saturday</h2>
+            <div class="events">
+            </div>
+          </div>
+          <div class="day">
+            <h2>Sunday</h2>
+            <div class="events">
             </div>
           </div>
         </section>
@@ -80,5 +113,7 @@
   </div>
   <script src="javascripts/lib/jquery.js"></script>
   <script src="javascripts/script.js"></script>
+  <script src="javascripts/init.js"></script>
+  <script src="javascripts/activity.js"></script>
 </body>
 </html>

@@ -6,5 +6,7 @@ Slow and steady wins the race.
 A project to sharpen my javascript, css, and UX chops.
 
 
-## New terrirtory
+## New territory
 - draggable
+- accessing form elements
+- where do i create new actions in form.

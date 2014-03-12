@@ -1,17 +1,18 @@
 .m-container {
 }
 
-.m-wrapper {
-  outline: 1px solid red;
-}
+.m-wrapper {}
 
 .m-content {
   background: #e6e6e6;
-  outline: 1px solid blue;
   width: 100%;
-  /*margin-left: 5%;*/
-  margin-left: 20%;
+  margin-left: 5%;
 }
+
+.m-content-pushed {
+  margin-left: 30% !important;
+}
+
 
 .m-gutter {
   background: #ffffff;
@@ -19,5 +20,27 @@
   height: 1em;
   font-size: 0.7em;
   padding: 0.5em;
+  padding-bottom: 1.8em;
   color: #999999;
+}
+
+.gutter-activity {
+  display: inline-block;
+  padding: 0.5em;
+}
+
+.gutter-activity.personal { background: rgba(0, 208, 255, 0.26); }
+.gutter-activity.relational { background: rgba(255, 0, 129, 0.26); }
+.gutter-activity.responsibility { background: rgba(37, 255, 0, 0.26); }
+
+.gutter-activity:not(:first-child) {
+  margin-left: 2em;
+}
+
+.gutter-activity:after {
+ content: "+";
+ color: #aaa;
+ background: white;
+ padding: 0 0.2em;
+ margin-left: 1em;
 }
