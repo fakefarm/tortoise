@@ -1,5 +1,6 @@
 .week {
-  overflow: auto;
+  overflow: hidden;
+  max-height: 400px;
   padding: 1em 0;
 }
 .day {
