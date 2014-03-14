@@ -1,4 +1,7 @@
-function clearForm() { $(':input').not(':button, :submit, :reset, :hidden').val(''); }
+function clearForm() {
+  $(':input').not(':button, :radio, :submit, :reset, :hidden').val('');
+  $("input:radio[name=category]:checked").removeAttr('checked');
+}
 
 $(function(){
   var act, template;
@@ -20,16 +23,26 @@ $(function(){
       _frequency: $frequency
     });
 
-    template = function(act){
-      return "<div draggable=true class='gutter-activity " + act.category + "'>" +
-      act.text +
-      "</div>";
-    };
+    function addToDom (act){
+      return "<div data-drag='true' class='gutter-activity " +
+       act.category +
+       "' id=activity_'" +
+       act.countId +
+       "'>" +
+       act.text +
+       "</div>";
+    }
 
     e.preventDefault();
-    $('#gutter').append(template(act));
+    console.log(act);
+    $('#gutter').append(addToDom(act));
+    $('[data-drag=true]').draggable();
     clearForm();
     $('.new-activity').toggleClass('open-drawer');
     $('.m-content').toggleClass('m-content-pushed');
+  });
+
+  $("#thing").on('drag', function(){
+    console.log('hey');
   });
 });
