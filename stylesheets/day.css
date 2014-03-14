@@ -1,14 +1,12 @@
 .week {
   overflow: hidden;
-  max-height: 400px;
   padding: 1em 0;
 }
 .day {
-  width: 12.%;
+  width: 10%;
   padding: 0.5em 1em;
   border-right: 1px dashed #b3b3b3;
   float: left;
-  min-height: 400px;
 }
 
 .day:last-child {

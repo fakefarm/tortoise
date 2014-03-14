@@ -1,6 +1,7 @@
 <html>
 <head>
   <title>Tortoise | Slow and steady wins the race.</title>
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="stylesheets/base.css">
   <link rel="stylesheet" href="stylesheets/layout.css">
   <link rel="stylesheet" href="stylesheets/modules.css">
@@ -13,23 +14,26 @@
   <div class="l-container m-container">
     <div class="m-wrapper l-wrapper">
       <header>
+        <div class="logo-space">
+        </div>
         <nav>
           <a href="/">Back to the farm</a>
-<!--           <a href="">Stats</a>
+          <!-- <a href="">Stats</a>
           <a href="">About</a>
-          <a href="">Print</a>
-          <a href="">by Dave</a> -->
+          <a href="">Print</a> -->
+          <a href="http://www.hireDave.me" target="_blank">by Dave</a>
         </nav>
       </header>
       <div id="new-button" class='new-button'>+</div>
       <section class="new-activity">
+        <span>What's this?</span>
         <form id="form" name="activity-form" action="">
-        <input id="activity-text" type="text" placeholder="Read poetry"><br>
+        <input autofocus id="activity-text" type="text" placeholder="Read poetry"><br>
         <input type="radio" name="category" value="personal">Personal<br>
         <input type="radio" name="category" value="relational">Relational<br>
         <input type="radio" name="category" value="responsibility">Responsibility<br>
-        <div>How long?</div>
         <select id="duration">
+          <option value="" disabled="disabled" selected="selected">How long?</option>
           <option value="25">15 min</option>
           <option value="50">30 min</option>
           <option value="75">45 min</option>
@@ -43,8 +47,8 @@
           <option value="1600">16 hr</option>
         </select>
 
-        <div>How many times?</div>
         <select id="frequency" name="act-len">
+          <option value="" disabled="disabled" selected="selected">How many times?</option>
           <option value="1">Once a week.</option>
           <option value="2">Twice a week.</option>
           <option value="3">Three times.</option>
@@ -59,53 +63,49 @@
 
       </section>
       <div class="m-content">
-        <section class="m-gutter" id="gutter">
-          Gutter.
-        </section>
+        <section class="m-gutter" id="gutter"></section>
         <section class="week">
           <div class="day">
             <h2>Monday</h2>
-            <div class="events">
-              <!-- <div class="event-box" id="thing" draggable="true">
-                <div class="handle">+</div>
-                <h3 class="title">Title</h3>
-                <h4 class="hours">3 hours</h4>
-                <div class="controls">
-                  <span>Edit</span>
-                  <span>|</span>
-                  <span>Delete</span>
-                </div>
-              </div> -->
+            <h3 id="monday" data-day='events'></h3>
+            <div class="events test-event" id='test-drop' data-drop='area'>
+              drag event here.
             </div>
           </div>
           <div class="day">
             <h2>Tuesday</h2>
-            <div class="events">
+            <h3 id="tuesday" data-day='events'></h3>
+            <div class="events" data-drop='area'>
             </div>
           </div>
           <div class="day">
             <h2>Wednesday</h2>
-            <div class="events">
+            <h3 id="wednesday" data-day='events'></h3>
+            <div class="events" data-drop='area'>
             </div>
           </div>
           <div class="day">
             <h2>Thursday</h2>
-            <div class="events">
+            <h3 id="thursday" data-day='events'></h3>
+            <div class="events" data-drop='area'>
             </div>
           </div>
           <div class="day">
             <h2>Friday</h2>
-            <div class="events">
+            <h3 id="friday" data-day='events'></h3>
+            <div class="events" data-drop='area'>
             </div>
           </div>
           <div class="day">
             <h2>Saturday</h2>
-            <div class="events">
+            <h3 id="saturday" data-day='events'></h3>
+            <div class="events" data-drop='area'>
             </div>
           </div>
           <div class="day">
             <h2>Sunday</h2>
-            <div class="events">
+            <h3 id="sunday" data-day='events'></h3>
+            <div class="events" data-drop='area'>
             </div>
           </div>
         </section>
@@ -114,8 +114,9 @@
   </div>
   <script src="javascripts/lib/jquery.js"></script>
   <script src="javascripts/lib/jquery-ui-1.10.4.custom.js"></script>
-  <script src="javascripts/script.js"></script>
-  <script src="javascripts/init.js"></script>
   <script src="javascripts/activity.js"></script>
+  <script src="javascripts/agenda.js"></script>
+  <script src="javascripts/helpers.js"></script>
+  <script src="javascripts/init.js"></script>
 </body>
 </html>

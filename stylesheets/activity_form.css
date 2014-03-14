@@ -18,7 +18,8 @@
 input {
   border: none;
   padding: 0.5em;
-  background: #e4e4e4;
+  background: #fff;
+  border-radius: 5px;
   padding: 1em;
 }
 
@@ -30,5 +31,6 @@ select {
   padding: 0.2em 1.3em;
   width: 198px;
   height: 49px;
-  font-size: 1.2em;
+  font-size: 1em;
+  margin: 0.5em 0 1em;
 }

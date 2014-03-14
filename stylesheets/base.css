@@ -6,3 +6,12 @@ body {
 .clearfix {
  clear: both;
 }
+
+.test-event {
+  font-size: 0.6em;
+  padding: 0.4em;
+  border: 2px dashed #aaa;
+  height: 40px;
+  width: 90%;
+  background: white;
+}
